@@ -72,7 +72,7 @@
       browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
       activate server
         Note right of server: Status 200 OK
-      server-->>browser: [{  "content": "", "date": "2025-10-04T18:53:34.544Z", ... ]
+      server-->>browser: [{  "content": "", "date": "2025-10-04T18:53:42.342Z", ... ]
       deactivate server
 
         Note right of browser : Load notes array
