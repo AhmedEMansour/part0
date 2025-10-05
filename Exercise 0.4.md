@@ -36,10 +36,11 @@
         Note right of browser : Load notes array
 
         Note left of browser: Add new note
+
       browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
       activate server
         Note right of server: Status 302 Found
-      server-->>browser: Redirect /exampleapp/notes
+      server-->>browser: Redirect -> Location: /exampleapp/notes
       deactivate server
 
         Note right of browser : Starts redirecting with the new payload
